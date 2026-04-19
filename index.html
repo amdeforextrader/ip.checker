@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetCheck Pro | Connection Diagnostics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <div class="status-badge">System Live</div>
+            <h1>Connection Intelligence</h1>
+            <p>Real-time network security and IP diagnostics.</p>
+        </header>
+
+        <div class="main-grid">
+            <div class="glass-card main-ip">
+                <span>Public IP Address</span>
+                <h2 id="ip-address">Loading...</h2>
+                <button onclick="copyIP()">Copy IP</button>
+            </div>
+
+            <div class="detail-grid">
+                <div class="glass-card small">
+                    <label>Location</label>
+                    <p id="location">Detecting...</p>
+                </div>
+                <div class="glass-card small">
+                    <label>ISP Provider</label>
+                    <p id="isp">Detecting...</p>
+                </div>
+                <div class="glass-card small">
+                    <label>Timezone</label>
+                    <p id="timezone">Detecting...</p>
+                </div>
+                <div class="glass-card small">
+                    <label>Currency</label>
+                    <p id="currency">Detecting...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-container">
+            <p>ADVERTISEMENT SPACE - 728 x 90</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
