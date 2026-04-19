@@ -1,0 +1,63 @@
+:root {
+    --bg: #0f172a;
+    --card: rgba(30, 41, 59, 0.7);
+    --accent: #38bdf8;
+    --text-main: #f8fafc;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text-main);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.dashboard {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 0;
+}
+
+header { text-align: center; margin-bottom: 40px; }
+
+.status-badge {
+    background: rgba(56, 189, 248, 0.2);
+    color: var(--accent);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.glass-card {
+    background: var(--card);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.main-ip { text-align: center; margin-bottom: 20px; border: 1px solid var(--accent); }
+.main-ip h2 { font-size: 48px; margin: 10px 0; color: var(--accent); }
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+label { font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; }
+
+.ad-container {
+    margin-top: 40px;
+    height: 90px;
+    border: 1px dashed #334155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+}
