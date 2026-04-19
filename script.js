@@ -1,6 +1,6 @@
 async function fetchNetworkData() {
     try {
-        const response = await fetch('https://ipapi.co/json/');
+        const response = await fetch('https://ipwho.is/.');
         const data = await response.json();
 
         // Putting the data into the HTML
